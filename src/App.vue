@@ -1,12 +1,10 @@
 <script setup>
-import TheWelcome from './components/TheWelcome.vue'
-
-
+import Zerops from './components/Zerops.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Zerops />
   </main>
 </template>
 

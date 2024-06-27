@@ -1,5 +1,5 @@
 <script setup>
-import Code from "@/components/Code.vue";
+import Instructions from "@/components/Instructions.vue";
 </script>
 
 <template>
@@ -21,18 +21,14 @@ import Code from "@/components/Code.vue";
         >
         </h1>
         <p class="mx-auto text-2xl">
-          Astro SSG (Static) example running on Zerops.
-          <span class="block"
-          >Deploy and test yourself with a single click.</span
-          >
+          Example of Vue 3 running on Zerops. <span class="block">Deploy and test yourself with a single click.</span>
         </p>
       </div>
     </div>
-
     <div class="mt-6">
       <div class="flex justify-center">
         <a
-            href="https://app.zerops.io/recipe/astro-static"
+            href="https://app.zerops.io/recipe/vue"
             target="_blank"
             class="text-lg"
         >
@@ -55,28 +51,18 @@ import Code from "@/components/Code.vue";
             ></g
             ></svg
             >
-          </span>
-        </a>
+          </span> </a>
       </div>
-
       <p class="text-center mx-auto pb-6 pt-24">
-        Deploying will import the following structure
-        (zerops-project-import.yml) <br />and use following (zerops.yml)
+        Deploying will import the following structure (zerops-project-import.yml) <br/>and use following (zerops.yml)
         instructions to build and deploy your app:
       </p>
-
-
-      <Code />
-
-
+      <Instructions/>
     </div>
     <p class="text-center mt-16">
-      Powered by{" "}
-      <a href="https://zerops.io" class="link" target="_blank"> Zerops </a>
+      Powered by <a href="https://zerops.io" class="link" target="_blank"> Zerops </a>
     </p>
   </div>
-
-
 </template>
 
 <style scoped>
@@ -102,15 +88,6 @@ main {
   background-color: #3cbdb2;
 }
 
-.astro-a {
-  position: absolute;
-  top: -32px;
-  left: 50%;
-  transform: translatex(-50%);
-  width: 220px;
-  height: auto;
-  z-index: -1;
-}
 h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -124,6 +101,7 @@ h2 {
   font-weight: 500;
   margin-bottom: 0.5em;
 }
+
 .text-gradient {
   background-image: linear-gradient(to right, #f7e9ff 0%, #7e7b8f 20%);
   -webkit-background-clip: text;
@@ -131,9 +109,11 @@ h2 {
   background-size: 400%;
   background-position: 0%;
 }
+
 .text-gradient:hover {
   background-image: linear-gradient(to right, #f7e9ff 0%, #7e7b8f 30%);
 }
+
 .link-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
